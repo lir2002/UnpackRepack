@@ -4,7 +4,7 @@
   <groupId>com.epam.ethan</groupId>
   <artifactId>UnpackRepack</artifactId>
   <name>Packaging Unpacked War</name>
-  <version>0.1.0</version>
+  <version>0.2.0</version>
   <packaging>war</packaging>
   
   <distributionManagement>
@@ -39,6 +39,15 @@
           </configuration>
         </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.2</version>
+        <configuration>
+          <archive>
+            <addMavenDescriptor>false</addMavenDescriptor>
+          </archive>
+        </configuration>
       </plugin>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>

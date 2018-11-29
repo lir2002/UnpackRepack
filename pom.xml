@@ -4,7 +4,7 @@
   <groupId>com.epam.ethan</groupId>
   <artifactId>UnpackRepack</artifactId>
   <name>Packaging Unpacked War</name>
-  <version>0.2.0</version>
+  <version>0.2.1</version>
   <packaging>war</packaging>
   
   <distributionManagement>
@@ -46,6 +46,7 @@
         <configuration>
           <archive>
             <addMavenDescriptor>false</addMavenDescriptor>
+            <manifestFile>src/main/webapp/META-INF/MANIFEST.MF</manifestFile>
           </archive>
         </configuration>
       </plugin>
